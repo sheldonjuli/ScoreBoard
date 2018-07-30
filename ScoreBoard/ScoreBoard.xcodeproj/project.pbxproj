@@ -14,6 +14,7 @@
 		2436113F210FB96300F3C1CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2436113D210FB96300F3C1CF /* LaunchScreen.storyboard */; };
 		2436114A210FB96400F3C1CF /* ScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361149210FB96400F3C1CF /* ScoreBoardTests.swift */; };
 		24361155210FB96400F3C1CF /* ScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361154210FB96400F3C1CF /* ScoreBoardUITests.swift */; };
+		24361165210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		24361150210FB96400F3C1CF /* ScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24361154210FB96400F3C1CF /* ScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardUITests.swift; sourceTree = "<group>"; };
 		24361156210FB96400F3C1CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSettingPopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				24361134210FB96300F3C1CF /* AppDelegate.swift */,
 				24361136210FB96300F3C1CF /* ViewController.swift */,
+				24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */,
 				24361138210FB96300F3C1CF /* Main.storyboard */,
 				2436113B210FB96300F3C1CF /* Assets.xcassets */,
 				2436113D210FB96300F3C1CF /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24361137210FB96300F3C1CF /* ViewController.swift in Sources */,
+				24361165210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift in Sources */,
 				24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

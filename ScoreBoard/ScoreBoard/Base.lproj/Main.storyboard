@@ -29,6 +29,9 @@
                                 <rect key="frame" x="88" y="318" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="List"/>
+                                <connections>
+                                    <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxl-SZ-tmS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-1H-ZTc">
                                 <rect key="frame" x="234" y="318" width="30" height="30"/>
@@ -52,6 +55,49 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Detail Setting Pop Up View Controller-->
+        <scene sceneID="67M-AO-h01">
+            <objects>
+                <viewController storyboardIdentifier="DetailSettingPopUpID" id="9xX-8e-2SH" customClass="DetailSettingPopUpViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WXN-gt-jxR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-kK-YwC">
+                                <rect key="frame" x="67" y="133.5" width="240" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vM7-iq-q69">
+                                        <rect key="frame" x="101" y="290" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeDetailSettingPopUp:" destination="9xX-8e-2SH" eventType="touchUpInside" id="CSB-ZC-5aU"/>
+                                            <action selector="closeDetailSettingPopUp:" destination="kyc-RM-nPt" eventType="touchUpInside" id="eKz-nO-Efo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.41442358501037868" green="0.84546645321599012" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6Wh-Z3-dMy"/>
+                                    <constraint firstAttribute="height" constant="400" id="KRy-1c-4m1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KZf-kK-YwC" firstAttribute="centerX" secondItem="WXN-gt-jxR" secondAttribute="centerX" id="WZ0-fL-rWQ"/>
+                            <constraint firstItem="KZf-kK-YwC" firstAttribute="centerY" secondItem="WXN-gt-jxR" secondAttribute="centerY" id="xii-KA-Xo7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i9w-kg-tXm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HBJ-iG-Psw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kyc-RM-nPt" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="33.733133433283363"/>
         </scene>
     </scenes>
 </document>
