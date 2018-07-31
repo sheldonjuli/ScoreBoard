@@ -10,10 +10,14 @@ import UIKit
 
 class DetailSettingPopUpViewController: UIViewController {
 
+    @IBOutlet weak var boardStyleLabel: UILabel!
+
+    var boardStyle: String? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showPopUp()
-        // Do any additional setup after loading the view.
+        boardStyleLabel.text = boardStyle
     }
 
     override func didReceiveMemoryWarning() {

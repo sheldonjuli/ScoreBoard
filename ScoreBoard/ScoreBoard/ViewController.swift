@@ -10,13 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    enum boardStyle : String {
-        case List
-        case Pie
-        case Block
-        case Donut
-    }
-    
     @IBOutlet weak var buttonList: UIButton!
     @IBOutlet weak var buttonPie: UIButton!
     @IBOutlet weak var buttonDonut: UIButton!
@@ -34,21 +27,23 @@ class ViewController: UIViewController {
 
     @IBAction func showDetailSettingPopUp(_ sender: UIButton) {
         
+        var boardStyle : String? = nil
         
         switch sender {
         case buttonList:
-            print("L")
+            boardStyle = "L"
         case buttonPie:
-            print("P")
+            boardStyle = "P"
         case buttonBlock:
-            print("B")
+            boardStyle = "B"
         case buttonDonut:
-            print("D")
+            boardStyle = "D"
         default:
             return
         }
         
         let detailSettingPopUpVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetailSettingPopUpID") as! DetailSettingPopUpViewController
+        detailSettingPopUpVC.boardStyle = boardStyle
         self.addChildViewController(detailSettingPopUpVC)
         detailSettingPopUpVC.view.frame = self.view.frame
         self.view.addSubview(detailSettingPopUpVC.view)
