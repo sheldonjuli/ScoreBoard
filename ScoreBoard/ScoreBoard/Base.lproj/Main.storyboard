@@ -37,21 +37,36 @@
                                 <rect key="frame" x="234" y="318" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pie"/>
+                                <connections>
+                                    <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbL-is-qMM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
                                 <rect key="frame" x="84" y="477" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Block"/>
+                                <connections>
+                                    <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9T4-hW-STq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-J9-Xie">
                                 <rect key="frame" x="228" y="477" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Donut"/>
+                                <connections>
+                                    <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhN-Up-57U"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buttonBlock" destination="QkK-sj-tEx" id="HBu-fI-ZLw"/>
+                        <outlet property="buttonDonut" destination="0Lh-J9-Xie" id="aJt-n5-Y5L"/>
+                        <outlet property="buttonList" destination="i8v-mG-Xnz" id="8VE-4U-8Wc"/>
+                        <outlet property="buttonPie" destination="mHU-1H-ZTc" id="Zst-1G-52M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +100,13 @@
                                     <constraint firstAttribute="height" constant="400" id="KRy-1c-4m1"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-8u-6Ht">
+                                <rect key="frame" x="166" y="203" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -97,7 +119,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBJ-iG-Psw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kyc-RM-nPt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="884" y="33.733133433283363"/>
+            <point key="canvasLocation" x="892" y="-21"/>
         </scene>
     </scenes>
 </document>
