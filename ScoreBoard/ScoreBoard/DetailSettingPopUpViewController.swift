@@ -12,7 +12,7 @@ class DetailSettingPopUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.showPopUp()
         // Do any additional setup after loading the view.
     }
 
@@ -22,8 +22,27 @@ class DetailSettingPopUpViewController: UIViewController {
     }
     
     @IBAction func closeDetailSettingPopUp(_ sender: UIButton) {
-        self.view.removeFromSuperview()
+        self.removePopUp()
+    }
     
+    func showPopUp() {
+        self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+        self.view.alpha = 0.0
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.alpha = 1.0
+            self.view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        });
+    }
+    
+    func removePopUp() {
+        UIView.animate(withDuration: 0.25, animations: {
+            self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            self.view.alpha = 0.0;
+        }, completion:{(finished : Bool) in
+            if (finished) {
+                self.view.removeFromSuperview()
+            }
+        });
     }
     
     /*
