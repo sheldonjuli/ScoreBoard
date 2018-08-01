@@ -80,10 +80,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-kK-YwC">
-                                <rect key="frame" x="67" y="133.5" width="240" height="400"/>
+                                <rect key="frame" x="70.5" y="133.5" width="233.5" height="400"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-8u-6Ht">
+                                        <rect key="frame" x="92.5" y="8" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Uck-7w-5wt">
+                                        <rect key="frame" x="70" y="97" width="94" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="editPlayerNum:" destination="9xX-8e-2SH" eventType="valueChanged" id="SDC-L2-NES"/>
+                                        </connections>
+                                    </stepper>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vM7-iq-q69">
-                                        <rect key="frame" x="101" y="290" width="39" height="30"/>
+                                        <rect key="frame" x="101" y="345" width="39" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Close">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -96,12 +110,12 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.41442358501037868" green="0.84546645321599012" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="6Wh-Z3-dMy"/>
-                                    <constraint firstAttribute="height" constant="400" id="KRy-1c-4m1"/>
+                                    <constraint firstAttribute="height" constant="400" id="fxK-1V-r5G"/>
+                                    <constraint firstAttribute="width" constant="233.5" id="qKw-wK-NXf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEm-8u-6Ht">
-                                <rect key="frame" x="166" y="239" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="p#" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l6Z-JV-ugt">
+                                <rect key="frame" x="177" y="188" width="20.5" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -117,12 +131,14 @@
                     </view>
                     <connections>
                         <outlet property="boardStyleLabel" destination="gEm-8u-6Ht" id="FTh-B7-voZ"/>
+                        <outlet property="playerNumLabel" destination="l6Z-JV-ugt" id="zHJ-Me-og0"/>
+                        <outlet property="playerNumStepper" destination="Uck-7w-5wt" id="ZrX-SZ-DWb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBJ-iG-Psw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kyc-RM-nPt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="892" y="-21"/>
+            <point key="canvasLocation" x="892" y="-21.139430284857571"/>
         </scene>
     </scenes>
 </document>

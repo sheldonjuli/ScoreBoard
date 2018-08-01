@@ -11,13 +11,21 @@ import UIKit
 class DetailSettingPopUpViewController: UIViewController {
 
     @IBOutlet weak var boardStyleLabel: UILabel!
-
+    @IBOutlet weak var playerNumLabel: UILabel!
+    @IBOutlet weak var playerNumStepper: UIStepper!
+    
     var boardStyle: String? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showPopUp()
+
         boardStyleLabel.text = boardStyle
+
+        playerNumStepper.minimumValue = 1
+        playerNumStepper.maximumValue = 8
+
+        playerNumLabel.text = Int(playerNumStepper.value).description
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,6 +37,10 @@ class DetailSettingPopUpViewController: UIViewController {
         self.removePopUp()
     }
     
+    @IBAction func editPlayerNum(_ sender: UIStepper) {
+        playerNumLabel.text = Int(playerNumStepper.value).description
+    }
+
     func showPopUp() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.view.alpha = 0.0

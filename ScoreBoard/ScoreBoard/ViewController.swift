@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var buttonPie: UIButton!
     @IBOutlet weak var buttonDonut: UIButton!
     @IBOutlet weak var buttonBlock: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
