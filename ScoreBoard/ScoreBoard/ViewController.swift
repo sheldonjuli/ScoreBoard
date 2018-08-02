@@ -27,17 +27,17 @@ class ViewController: UIViewController {
 
     @IBAction func showDetailSettingPopUp(_ sender: UIButton) {
         
-        var boardStyle : String? = nil
+        var boardStyle : BoardStyle? = nil
         
         switch sender {
         case buttonList:
-            boardStyle = "L"
+            boardStyle = BoardStyle.List
         case buttonPie:
-            boardStyle = "P"
+            boardStyle = BoardStyle.Pie
         case buttonBlock:
-            boardStyle = "B"
+            boardStyle = BoardStyle.Block
         case buttonDonut:
-            boardStyle = "D"
+            boardStyle = BoardStyle.Donut
         default:
             return
         }

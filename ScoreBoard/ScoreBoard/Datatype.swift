@@ -34,7 +34,7 @@ struct Player {
     }
 }
 
-class board {
+class Board {
     var boardStyle : BoardStyle
     var players = [Player]()
     
@@ -42,7 +42,7 @@ class board {
         self.boardStyle = boardStyle
         for _ in 1...playerNum {
             let player = Player()
-            players += [player, player]
+            players += [player]
         }
     }
 }

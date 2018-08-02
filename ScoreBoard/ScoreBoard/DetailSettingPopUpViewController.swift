@@ -15,13 +15,13 @@ class DetailSettingPopUpViewController: UIViewController {
     @IBOutlet weak var playerNumStepper: UIStepper!
     @IBOutlet weak var nextButton: UIButton!
     
-    var boardStyle: String? = nil
+    var boardStyle: BoardStyle? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showPopUp()
 
-        boardStyleLabel.text = boardStyle
+        // boardStyleLabel.text = String(boardStyle)
 
         playerNumStepper.minimumValue = 1
         playerNumStepper.maximumValue = 8
@@ -35,6 +35,9 @@ class DetailSettingPopUpViewController: UIViewController {
     }
     
     @IBAction func closeDetailSettingPopUp(_ sender: UIButton) {
+        // Clear player list
+        Player.currId = 0
+
         self.removePopUp()
     }
     
@@ -43,7 +46,13 @@ class DetailSettingPopUpViewController: UIViewController {
     }
 
     @IBAction func clickNextButton(_ sender: UIButton) {
-        print(boardStyle!)
+        let board = Board(playerNum: Int(playerNumStepper.value), boardStyle: boardStyle!)
+        print(board.boardStyle)
+        print(board.players.count)
+        
+        for player in board.players {
+            print(player.name)
+        }
     }
 
     func showPopUp() {
