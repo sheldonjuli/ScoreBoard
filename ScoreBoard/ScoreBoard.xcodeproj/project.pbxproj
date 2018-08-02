@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241786AF21134BED00B57190 /* Datatype.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786AE21134BED00B57190 /* Datatype.swift */; };
 		24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361134210FB96300F3C1CF /* AppDelegate.swift */; };
 		24361137210FB96300F3C1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361136210FB96300F3C1CF /* ViewController.swift */; };
 		2436113A210FB96300F3C1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24361138210FB96300F3C1CF /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		241786AE21134BED00B57190 /* Datatype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datatype.swift; sourceTree = "<group>"; };
 		24361131210FB96300F3C1CF /* ScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24361134210FB96300F3C1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24361136210FB96300F3C1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				24361134210FB96300F3C1CF /* AppDelegate.swift */,
 				24361136210FB96300F3C1CF /* ViewController.swift */,
 				24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */,
+				241786AE21134BED00B57190 /* Datatype.swift */,
 				24361138210FB96300F3C1CF /* Main.storyboard */,
 				2436113B210FB96300F3C1CF /* Assets.xcassets */,
 				2436113D210FB96300F3C1CF /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24361137210FB96300F3C1CF /* ViewController.swift in Sources */,
+				241786AF21134BED00B57190 /* Datatype.swift in Sources */,
 				24361165210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift in Sources */,
 				24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */,
 			);
