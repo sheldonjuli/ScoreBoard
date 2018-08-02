@@ -9,12 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var buttonList: UIButton!
     @IBOutlet weak var buttonPie: UIButton!
     @IBOutlet weak var buttonDonut: UIButton!
     @IBOutlet weak var buttonBlock: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     @IBAction func showDetailSettingPopUp(_ sender: UIButton) {
         
         var boardStyle : BoardStyle? = nil

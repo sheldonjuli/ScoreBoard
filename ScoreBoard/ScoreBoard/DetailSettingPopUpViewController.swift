@@ -9,7 +9,7 @@
 import UIKit
 
 class DetailSettingPopUpViewController: UIViewController {
-
+    
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var boardStyleLabel: UILabel!
     @IBOutlet weak var playerNumLabel: UILabel!
@@ -22,17 +22,17 @@ class DetailSettingPopUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.showPopUp()
-
+        
         // boardStyleLabel.text = String(boardStyle)
-
+        
         playerNumStepper.minimumValue = 1
         playerNumStepper.maximumValue = 8
-
+        
         playerNumLabel.text = Int(playerNumStepper.value).description
         
         scoreValue.keyboardType = UIKeyboardType.numberPad
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,14 +41,14 @@ class DetailSettingPopUpViewController: UIViewController {
     @IBAction func closeDetailSettingPopUp(_ sender: UIButton) {
         // Clear player list
         Player.currId = 0
-
+        
         self.removePopUp()
     }
     
     @IBAction func editPlayerNum(_ sender: UIStepper) {
         playerNumLabel.text = Int(playerNumStepper.value).description
     }
-
+    
     @IBAction func clickNextButton(_ sender: UIButton) {
         let board = Board(playerNum: Int(playerNumStepper.value), boardStyle: boardStyle!)
         print(board.boardStyle)
@@ -58,7 +58,7 @@ class DetailSettingPopUpViewController: UIViewController {
             print(player.name)
         }
     }
-
+    
     func showPopUp() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.view.alpha = 0.0
@@ -81,15 +81,15 @@ class DetailSettingPopUpViewController: UIViewController {
     
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
 
 extension UIView {
