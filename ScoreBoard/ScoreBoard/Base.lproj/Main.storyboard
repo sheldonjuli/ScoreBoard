@@ -85,6 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="4" y="-21"/>
         </scene>
         <!--Detail Setting Pop Up View Controller-->
         <scene sceneID="67M-AO-h01">
@@ -131,6 +132,15 @@
                                             <action selector="closeDetailSettingPopUp:" destination="kyc-RM-nPt" eventType="touchUpInside" id="eKz-nO-Efo"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TCb-sd-nN1">
+                                        <rect key="frame" x="108" y="317" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.79393707150000004" blue="0.32779123580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="NEXT"/>
+                                        <connections>
+                                            <action selector="clickNextButton:" destination="9xX-8e-2SH" eventType="touchUpInside" id="7XP-dy-AEn"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41442358501037868" green="0.84546645321599012" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -155,6 +165,7 @@
                     </view>
                     <connections>
                         <outlet property="boardStyleLabel" destination="gEm-8u-6Ht" id="FTh-B7-voZ"/>
+                        <outlet property="nextButton" destination="TCb-sd-nN1" id="DRT-c9-TAl"/>
                         <outlet property="playerNumLabel" destination="l6Z-JV-ugt" id="zHJ-Me-og0"/>
                         <outlet property="playerNumStepper" destination="F1R-Aj-QVb" id="csM-sQ-I7R"/>
                     </connections>
@@ -163,6 +174,30 @@
                 <exit id="kyc-RM-nPt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="892" y="-21.139430284857571"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="C89-rk-UTW">
+            <objects>
+                <viewController id="0Us-gX-BzE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6kU-jG-RvR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-ri-lGH">
+                                <rect key="frame" x="166" y="150" width="55" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="kfQ-H7-7Dd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="je3-k3-DgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="-21"/>
         </scene>
     </scenes>
 </document>

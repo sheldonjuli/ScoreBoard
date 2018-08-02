@@ -13,6 +13,7 @@ class DetailSettingPopUpViewController: UIViewController {
     @IBOutlet weak var boardStyleLabel: UILabel!
     @IBOutlet weak var playerNumLabel: UILabel!
     @IBOutlet weak var playerNumStepper: UIStepper!
+    @IBOutlet weak var nextButton: UIButton!
     
     var boardStyle: String? = nil
     
@@ -39,6 +40,10 @@ class DetailSettingPopUpViewController: UIViewController {
     
     @IBAction func editPlayerNum(_ sender: UIStepper) {
         playerNumLabel.text = Int(playerNumStepper.value).description
+    }
+
+    @IBAction func clickNextButton(_ sender: UIButton) {
+        print(boardStyle!)
     }
 
     func showPopUp() {
