@@ -10,9 +10,11 @@ import UIKit
 
 class DetailSettingPopUpViewController: UIViewController {
 
+    @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var boardStyleLabel: UILabel!
     @IBOutlet weak var playerNumLabel: UILabel!
     @IBOutlet weak var playerNumStepper: UIStepper!
+    @IBOutlet weak var scoreValue: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     var boardStyle: BoardStyle? = nil
@@ -27,6 +29,8 @@ class DetailSettingPopUpViewController: UIViewController {
         playerNumStepper.maximumValue = 8
 
         playerNumLabel.text = Int(playerNumStepper.value).description
+        
+        scoreValue.keyboardType = UIKeyboardType.numberPad
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +79,7 @@ class DetailSettingPopUpViewController: UIViewController {
         });
     }
     
+    
     /*
     // MARK: - Navigation
 
@@ -85,4 +90,16 @@ class DetailSettingPopUpViewController: UIViewController {
     }
     */
 
+}
+
+extension UIView {
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
 }
