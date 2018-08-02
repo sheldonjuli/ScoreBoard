@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		241786AF21134BED00B57190 /* ObjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786AE21134BED00B57190 /* ObjectModels.swift */; };
+		241786B62113C66D00B57190 /* Maldives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 241786B52113C66D00B57190 /* Maldives.jpg */; };
 		24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361134210FB96300F3C1CF /* AppDelegate.swift */; };
 		24361137210FB96300F3C1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361136210FB96300F3C1CF /* ViewController.swift */; };
 		2436113A210FB96300F3C1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24361138210FB96300F3C1CF /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		241786AE21134BED00B57190 /* ObjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModels.swift; sourceTree = "<group>"; };
+		241786B52113C66D00B57190 /* Maldives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Maldives.jpg; sourceTree = "<group>"; };
 		24361131210FB96300F3C1CF /* ScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24361134210FB96300F3C1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24361136210FB96300F3C1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		241786B02113C38300B57190 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				241786B52113C66D00B57190 /* Maldives.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		24361128210FB96300F3C1CF = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +111,7 @@
 		24361133210FB96300F3C1CF /* ScoreBoard */ = {
 			isa = PBXGroup;
 			children = (
+				241786B02113C38300B57190 /* Images */,
 				24361134210FB96300F3C1CF /* AppDelegate.swift */,
 				24361136210FB96300F3C1CF /* ViewController.swift */,
 				24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */,
@@ -235,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241786B62113C66D00B57190 /* Maldives.jpg in Resources */,
 				2436113F210FB96300F3C1CF /* LaunchScreen.storyboard in Resources */,
 				2436113C210FB96300F3C1CF /* Assets.xcassets in Resources */,
 				2436113A210FB96300F3C1CF /* Main.storyboard in Resources */,

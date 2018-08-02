@@ -19,59 +19,119 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maldives.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-Zh-LR1">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-ax-ZJn">
                                 <rect key="frame" x="57.5" y="133.5" width="260" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-mG-Xnz">
-                                        <rect key="frame" x="69" y="159" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-mG-Xnz">
+                                        <rect key="frame" x="30" y="140" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="DWl-MG-6GB"/>
+                                            <constraint firstAttribute="height" constant="80" id="kth-zD-hhz"/>
+                                        </constraints>
                                         <state key="normal" title="List"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxl-SZ-tmS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-1H-ZTc">
-                                        <rect key="frame" x="182" y="159" width="30" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-1H-ZTc">
+                                        <rect key="frame" x="150" y="140" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="AsO-sD-Nrf"/>
+                                            <constraint firstAttribute="height" constant="80" id="qhf-7G-EqJ"/>
+                                        </constraints>
                                         <state key="normal" title="Pie"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbL-is-qMM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
-                                        <rect key="frame" x="65" y="248" width="38" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
+                                        <rect key="frame" x="30" y="260" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="HiY-iR-1WH"/>
+                                            <constraint firstAttribute="width" constant="80" id="p0I-jN-fbJ"/>
+                                        </constraints>
                                         <state key="normal" title="Block"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9T4-hW-STq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-J9-Xie">
-                                        <rect key="frame" x="176" y="248" width="42" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-J9-Xie">
+                                        <rect key="frame" x="150" y="260" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="erd-3q-z9X"/>
+                                            <constraint firstAttribute="height" constant="80" id="wfn-BL-jFw"/>
+                                        </constraints>
                                         <state key="normal" title="Donut"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhN-Up-57U"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHD-Gt-Hw3">
-                                        <rect key="frame" x="105" y="50" width="50" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHD-Gt-Hw3">
+                                        <rect key="frame" x="105" y="50" width="50" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="q1r-Ok-nH8"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="mHU-1H-ZTc" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="60" id="8GM-KU-tSe"/>
+                                    <constraint firstItem="gHD-Gt-Hw3" firstAttribute="top" secondItem="9jB-ax-ZJn" secondAttribute="top" constant="50" id="NCw-Tu-U5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Lh-J9-Xie" secondAttribute="trailing" constant="30" id="QCO-BA-RVS"/>
                                     <constraint firstAttribute="width" constant="260" id="S0m-dx-n41"/>
+                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="60" id="WSB-RL-Bs7"/>
+                                    <constraint firstItem="QkK-sj-tEx" firstAttribute="top" secondItem="i8v-mG-Xnz" secondAttribute="bottom" constant="40" id="mi6-Cj-cfa"/>
+                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="30" id="n3K-Rh-Z7x" userLabel="Button List.leading = leading + 30"/>
                                     <constraint firstAttribute="height" constant="400" id="oXs-zs-jUY"/>
+                                    <constraint firstItem="QkK-sj-tEx" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="30" id="p7q-Fa-IEs"/>
+                                    <constraint firstAttribute="trailing" secondItem="mHU-1H-ZTc" secondAttribute="trailing" constant="30" id="uDI-hB-h0X"/>
+                                    <constraint firstItem="0Lh-J9-Xie" firstAttribute="top" secondItem="mHU-1H-ZTc" secondAttribute="bottom" constant="40" id="zMr-cd-5gd"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="yBb-Zh-LR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="15b-xd-kMG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yBb-Zh-LR1" secondAttribute="bottom" id="Bxj-rg-Wma"/>
                             <constraint firstItem="9jB-ax-ZJn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IKx-2x-iXq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yBb-Zh-LR1" secondAttribute="trailing" id="c4L-Vc-Q3C"/>
+                            <constraint firstItem="yBb-Zh-LR1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jiw-kY-iMz"/>
                             <constraint firstItem="9jB-ax-ZJn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zgo-tQ-lOH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -179,7 +239,6 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.2579738526" blue="0.43555547610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="KZf-kK-YwC" firstAttribute="leading" secondItem="i9w-kg-tXm" secondAttribute="leading" constant="60" id="2aR-c2-74x"/>
                             <constraint firstItem="i9w-kg-tXm" firstAttribute="bottom" secondItem="KZf-kK-YwC" secondAttribute="bottom" constant="101" id="FzO-14-7TP"/>
@@ -227,4 +286,7 @@
             <point key="canvasLocation" x="1705" y="-21"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Maldives.jpg" width="1440" height="900"/>
+    </resources>
 </document>
