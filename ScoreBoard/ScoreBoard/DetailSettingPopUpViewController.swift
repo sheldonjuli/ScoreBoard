@@ -12,12 +12,14 @@ class DetailSettingPopUpViewController: UIViewController {
     
     @IBOutlet weak var popUpView: UIView!
     @IBOutlet weak var boardStylePreview: UIImageView!
+    @IBOutlet weak var playerNumDownButton: UIButton!
     @IBOutlet weak var playerNumLabel: UILabel!
-    @IBOutlet weak var playerNumStepper: UIStepper!
+    @IBOutlet weak var playerNumUpButton: UIButton!
     @IBOutlet weak var scoreValue: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     var boardStyle: BoardStyle? = nil
+    var playerNum: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +27,8 @@ class DetailSettingPopUpViewController: UIViewController {
         
         // TODO dynamically draw the preview
         self.showBoardStylePreview()
-        
-        playerNumStepper.minimumValue = 1
-        playerNumStepper.maximumValue = 8
-        
-        playerNumLabel.text = Int(playerNumStepper.value).description
+
+        playerNumLabel.text = playerNum.description
         
         scoreValue.keyboardType = UIKeyboardType.numberPad
     }
@@ -46,12 +45,26 @@ class DetailSettingPopUpViewController: UIViewController {
         self.removePopUp()
     }
     
-    @IBAction func editPlayerNum(_ sender: UIStepper) {
-        playerNumLabel.text = Int(playerNumStepper.value).description
+    @IBAction func editPlayerNum(_ sender: UIButton) {
+        
+        if sender == playerNumDownButton, playerNum > 1 {
+            playerNum -= 1
+        } else if sender == playerNumUpButton {
+            if boardStyle == .List {
+                if playerNum < 25 {
+                    playerNum += 1
+                }
+            } else {
+                if playerNum < 8 {
+                    playerNum += 1
+                }
+            }
+        }
+        playerNumLabel.text = playerNum.description
     }
     
     @IBAction func clickNextButton(_ sender: UIButton) {
-        let board = Board(playerNum: Int(playerNumStepper.value), boardStyle: boardStyle!)
+        let board = Board(playerNum: playerNum, boardStyle: boardStyle!)
 
 //        print(board.boardStyle)
 //        print(board.players.count)
