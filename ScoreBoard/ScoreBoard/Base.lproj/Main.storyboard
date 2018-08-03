@@ -270,6 +270,10 @@
                         <outlet property="playerNumStepper" destination="F1R-Aj-QVb" id="csM-sQ-I7R"/>
                         <outlet property="popUpView" destination="KZf-kK-YwC" id="6f6-X1-xKm"/>
                         <outlet property="scoreValue" destination="4QY-BB-eWb" id="e5j-23-81q"/>
+                        <segue destination="0Us-gX-BzE" kind="show" identifier="openListVC" id="njo-6b-7Xy"/>
+                        <segue destination="LBe-5m-73j" kind="show" identifier="openPieVC" id="L0j-Lm-hB6"/>
+                        <segue destination="IXe-YI-2yW" kind="show" identifier="openBlockVC" id="Xxh-dT-8nj"/>
+                        <segue destination="VBc-cN-nAK" kind="show" identifier="openDonutVC" id="mem-wY-esJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBJ-iG-Psw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="892" y="-21.139430284857571"/>
         </scene>
-        <!--View Controller-->
+        <!--List View Controller-->
         <scene sceneID="C89-rk-UTW">
             <objects>
-                <viewController id="0Us-gX-BzE" sceneMemberID="viewController">
+                <viewController id="0Us-gX-BzE" customClass="ListViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6kU-jG-RvR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -299,7 +303,79 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="je3-k3-DgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-21"/>
+            <point key="canvasLocation" x="1849" y="-21"/>
+        </scene>
+        <!--Pie View Controller-->
+        <scene sceneID="mLn-bA-WwO">
+            <objects>
+                <viewController id="LBe-5m-73j" customClass="PieViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L0f-qU-m6k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pie VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-Hm-wh2">
+                                <rect key="frame" x="166" y="101" width="51" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DfU-yf-68b"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNn-iU-1Zb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="752"/>
+        </scene>
+        <!--Block View Controller-->
+        <scene sceneID="o4N-51-6p2">
+            <objects>
+                <viewController id="IXe-YI-2yW" customClass="BlockViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vhn-Oz-NAR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Block VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRj-Vh-hG2">
+                                <rect key="frame" x="166" y="98" width="70" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fgv-RP-4BE"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1be-6x-jfM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="1468"/>
+        </scene>
+        <!--Donut View Controller-->
+        <scene sceneID="543-N4-qFf">
+            <objects>
+                <viewController id="VBc-cN-nAK" customClass="DonutViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xgN-Qo-VO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donut VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d08-uu-Vqx">
+                                <rect key="frame" x="166" y="130" width="74" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DYf-YP-Zbh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSW-XO-tlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="2219"/>
         </scene>
     </scenes>
     <resources>

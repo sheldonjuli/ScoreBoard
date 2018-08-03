@@ -51,11 +51,23 @@ class DetailSettingPopUpViewController: UIViewController {
     
     @IBAction func clickNextButton(_ sender: UIButton) {
         let board = Board(playerNum: Int(playerNumStepper.value), boardStyle: boardStyle!)
-        print(board.boardStyle)
-        print(board.players.count)
-        
-        for player in board.players {
-            print(player.name)
+
+//        print(board.boardStyle)
+//        print(board.players.count)
+//
+//        for player in board.players {
+//            print(player.name)
+//        }
+
+        switch board.boardStyle {
+        case BoardStyle.List:
+            performSegue(withIdentifier: "openListVC", sender: sender)
+        case BoardStyle.Pie:
+            performSegue(withIdentifier: "openPieVC", sender: sender)
+        case BoardStyle.Block:
+            performSegue(withIdentifier: "openBlockVC", sender: sender)
+        case BoardStyle.Donut:
+            performSegue(withIdentifier: "openDonutVC", sender: sender)
         }
     }
     
@@ -78,7 +90,12 @@ class DetailSettingPopUpViewController: UIViewController {
             }
         });
     }
-    
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "openListVC" {
+            let listVC = segue.destination as? ListViewController
+        }
+    }
     
     /*
      // MARK: - Navigation

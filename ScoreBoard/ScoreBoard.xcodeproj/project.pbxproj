@@ -13,6 +13,10 @@
 		241786BE2113E68E00B57190 /* pie.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BD2113E68E00B57190 /* pie.png */; };
 		241786C02113E7FA00B57190 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BF2113E7FA00B57190 /* list.png */; };
 		241786C42113EAEF00B57190 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786C32113EAEF00B57190 /* block.png */; };
+		241786C62114F87000B57190 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786C52114F87000B57190 /* ListViewController.swift */; };
+		241786C82114FA5100B57190 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786C72114FA5100B57190 /* PieViewController.swift */; };
+		241786CA2114FA5F00B57190 /* BlockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786C92114FA5F00B57190 /* BlockViewController.swift */; };
+		241786CC2114FA7300B57190 /* DonutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786CB2114FA7300B57190 /* DonutViewController.swift */; };
 		24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361134210FB96300F3C1CF /* AppDelegate.swift */; };
 		24361137210FB96300F3C1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361136210FB96300F3C1CF /* ViewController.swift */; };
 		2436113A210FB96300F3C1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24361138210FB96300F3C1CF /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		241786BD2113E68E00B57190 /* pie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pie.png; sourceTree = "<group>"; };
 		241786BF2113E7FA00B57190 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
 		241786C32113EAEF00B57190 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		241786C52114F87000B57190 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		241786C72114FA5100B57190 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
+		241786C92114FA5F00B57190 /* BlockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockViewController.swift; sourceTree = "<group>"; };
+		241786CB2114FA7300B57190 /* DonutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonutViewController.swift; sourceTree = "<group>"; };
 		24361131210FB96300F3C1CF /* ScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24361134210FB96300F3C1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24361136210FB96300F3C1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +135,10 @@
 				24361134210FB96300F3C1CF /* AppDelegate.swift */,
 				24361136210FB96300F3C1CF /* ViewController.swift */,
 				24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */,
+				241786C52114F87000B57190 /* ListViewController.swift */,
+				241786C72114FA5100B57190 /* PieViewController.swift */,
+				241786C92114FA5F00B57190 /* BlockViewController.swift */,
+				241786CB2114FA7300B57190 /* DonutViewController.swift */,
 				241786AE21134BED00B57190 /* ObjectModels.swift */,
 				24361138210FB96300F3C1CF /* Main.storyboard */,
 				2436113B210FB96300F3C1CF /* Assets.xcassets */,
@@ -293,6 +305,10 @@
 				24361137210FB96300F3C1CF /* ViewController.swift in Sources */,
 				241786AF21134BED00B57190 /* ObjectModels.swift in Sources */,
 				24361165210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift in Sources */,
+				241786CA2114FA5F00B57190 /* BlockViewController.swift in Sources */,
+				241786C82114FA5100B57190 /* PieViewController.swift in Sources */,
+				241786CC2114FA7300B57190 /* DonutViewController.swift in Sources */,
+				241786C62114F87000B57190 /* ListViewController.swift in Sources */,
 				24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
