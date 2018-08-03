@@ -11,7 +11,7 @@ import UIKit
 class DetailSettingPopUpViewController: UIViewController {
     
     @IBOutlet weak var popUpView: UIView!
-    @IBOutlet weak var boardStyleLabel: UILabel!
+    @IBOutlet weak var boardStylePreview: UIImageView!
     @IBOutlet weak var playerNumLabel: UILabel!
     @IBOutlet weak var playerNumStepper: UIStepper!
     @IBOutlet weak var scoreValue: UITextField!
@@ -23,7 +23,8 @@ class DetailSettingPopUpViewController: UIViewController {
         super.viewDidLoad()
         self.showPopUp()
         
-        // boardStyleLabel.text = String(boardStyle)
+        // TODO dynamically draw the preview
+        self.showBoardStylePreview()
         
         playerNumStepper.minimumValue = 1
         playerNumStepper.maximumValue = 8
@@ -89,6 +90,21 @@ class DetailSettingPopUpViewController: UIViewController {
                 self.view.removeFromSuperview()
             }
         });
+    }
+    
+    func showBoardStylePreview() {
+        if let boardStyle = self.boardStyle {
+            switch boardStyle {
+            case .List:
+                boardStylePreview.image = UIImage(named: "list.png")
+            case .Pie:
+                boardStylePreview.image = UIImage(named: "pie.png")
+            case .Block:
+                boardStylePreview.image = UIImage(named: "block.png")
+            case .Donut:
+                boardStylePreview.image = UIImage(named: "donut.png")
+            }
+        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
