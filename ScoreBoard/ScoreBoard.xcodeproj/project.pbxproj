@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		241786AF21134BED00B57190 /* ObjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786AE21134BED00B57190 /* ObjectModels.swift */; };
 		241786B62113C66D00B57190 /* Maldives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 241786B52113C66D00B57190 /* Maldives.jpg */; };
+		241786BC2113E33800B57190 /* donut.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BB2113E33800B57190 /* donut.png */; };
+		241786BE2113E68E00B57190 /* pie.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BD2113E68E00B57190 /* pie.png */; };
+		241786C02113E7FA00B57190 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BF2113E7FA00B57190 /* list.png */; };
+		241786C42113EAEF00B57190 /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786C32113EAEF00B57190 /* block.png */; };
 		24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361134210FB96300F3C1CF /* AppDelegate.swift */; };
 		24361137210FB96300F3C1CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24361136210FB96300F3C1CF /* ViewController.swift */; };
 		2436113A210FB96300F3C1CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24361138210FB96300F3C1CF /* Main.storyboard */; };
@@ -39,6 +43,10 @@
 /* Begin PBXFileReference section */
 		241786AE21134BED00B57190 /* ObjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModels.swift; sourceTree = "<group>"; };
 		241786B52113C66D00B57190 /* Maldives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Maldives.jpg; sourceTree = "<group>"; };
+		241786BB2113E33800B57190 /* donut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donut.png; sourceTree = "<group>"; };
+		241786BD2113E68E00B57190 /* pie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pie.png; sourceTree = "<group>"; };
+		241786BF2113E7FA00B57190 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		241786C32113EAEF00B57190 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
 		24361131210FB96300F3C1CF /* ScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24361134210FB96300F3C1CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24361136210FB96300F3C1CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +91,10 @@
 		241786B02113C38300B57190 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				241786BF2113E7FA00B57190 /* list.png */,
+				241786BD2113E68E00B57190 /* pie.png */,
+				241786C32113EAEF00B57190 /* block.png */,
+				241786BB2113E33800B57190 /* donut.png */,
 				241786B52113C66D00B57190 /* Maldives.jpg */,
 			);
 			path = Images;
@@ -246,10 +258,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241786C02113E7FA00B57190 /* list.png in Resources */,
 				241786B62113C66D00B57190 /* Maldives.jpg in Resources */,
 				2436113F210FB96300F3C1CF /* LaunchScreen.storyboard in Resources */,
 				2436113C210FB96300F3C1CF /* Assets.xcassets in Resources */,
+				241786BE2113E68E00B57190 /* pie.png in Resources */,
+				241786BC2113E33800B57190 /* donut.png in Resources */,
 				2436113A210FB96300F3C1CF /* Main.storyboard in Resources */,
+				241786C42113EAEF00B57190 /* block.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

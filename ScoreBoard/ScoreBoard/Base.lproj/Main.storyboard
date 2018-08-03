@@ -19,19 +19,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maldives.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-Zh-LR1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yBb-Zh-LR1">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-ax-ZJn">
-                                <rect key="frame" x="57.5" y="133.5" width="260" height="400"/>
+                                <rect key="frame" x="58" y="134" width="260" height="400"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-mG-Xnz">
-                                        <rect key="frame" x="30" y="140" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-mG-Xnz">
+                                        <rect key="frame" x="10" y="110" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="DWl-MG-6GB"/>
-                                            <constraint firstAttribute="height" constant="80" id="kth-zD-hhz"/>
+                                            <constraint firstAttribute="width" constant="100" id="DWl-MG-6GB"/>
+                                            <constraint firstAttribute="height" constant="100" id="kth-zD-hhz"/>
                                         </constraints>
-                                        <state key="normal" title="List"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" image="list.png"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
@@ -44,13 +46,14 @@
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vxl-SZ-tmS"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-1H-ZTc">
-                                        <rect key="frame" x="150" y="140" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHU-1H-ZTc">
+                                        <rect key="frame" x="150" y="110" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="AsO-sD-Nrf"/>
-                                            <constraint firstAttribute="height" constant="80" id="qhf-7G-EqJ"/>
+                                            <constraint firstAttribute="width" constant="100" id="AsO-sD-Nrf"/>
+                                            <constraint firstAttribute="height" constant="100" id="qhf-7G-EqJ"/>
                                         </constraints>
-                                        <state key="normal" title="Pie"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Pie" image="pie.png"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
@@ -63,13 +66,14 @@
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NbL-is-qMM"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
-                                        <rect key="frame" x="30" y="260" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
+                                        <rect key="frame" x="10" y="250" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="HiY-iR-1WH"/>
-                                            <constraint firstAttribute="width" constant="80" id="p0I-jN-fbJ"/>
+                                            <constraint firstAttribute="height" constant="100" id="HiY-iR-1WH"/>
+                                            <constraint firstAttribute="width" constant="100" id="p0I-jN-fbJ"/>
                                         </constraints>
-                                        <state key="normal" title="Block"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Block" image="block.png"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
@@ -82,13 +86,14 @@
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9T4-hW-STq"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-J9-Xie">
-                                        <rect key="frame" x="150" y="260" width="80" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lh-J9-Xie">
+                                        <rect key="frame" x="150" y="250" width="100" height="100"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="80" id="erd-3q-z9X"/>
-                                            <constraint firstAttribute="height" constant="80" id="wfn-BL-jFw"/>
+                                            <constraint firstAttribute="width" constant="100" id="erd-3q-z9X"/>
+                                            <constraint firstAttribute="height" constant="100" id="wfn-BL-jFw"/>
                                         </constraints>
-                                        <state key="normal" title="Donut"/>
+                                        <inset key="imageEdgeInsets" minX="20" minY="20" maxX="20" maxY="20"/>
+                                        <state key="normal" title="Donut" image="donut.png"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                                 <integer key="value" value="1"/>
@@ -101,27 +106,27 @@
                                             <action selector="showDetailSettingPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mhN-Up-57U"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HOME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHD-Gt-Hw3">
-                                        <rect key="frame" x="105" y="50" width="50" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Your Style" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHD-Gt-Hw3">
+                                        <rect key="frame" x="3" y="10" width="255.5" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="q1r-Ok-nH8"/>
+                                            <constraint firstAttribute="height" constant="60" id="q1r-Ok-nH8"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="mHU-1H-ZTc" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="60" id="8GM-KU-tSe"/>
-                                    <constraint firstItem="gHD-Gt-Hw3" firstAttribute="top" secondItem="9jB-ax-ZJn" secondAttribute="top" constant="50" id="NCw-Tu-U5d"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Lh-J9-Xie" secondAttribute="trailing" constant="30" id="QCO-BA-RVS"/>
+                                    <constraint firstItem="gHD-Gt-Hw3" firstAttribute="centerX" secondItem="9jB-ax-ZJn" secondAttribute="centerX" id="6tk-XK-VPY"/>
+                                    <constraint firstItem="mHU-1H-ZTc" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="40" id="8GM-KU-tSe"/>
+                                    <constraint firstItem="gHD-Gt-Hw3" firstAttribute="top" secondItem="9jB-ax-ZJn" secondAttribute="top" constant="10" id="NCw-Tu-U5d"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Lh-J9-Xie" secondAttribute="trailing" constant="10" id="QCO-BA-RVS"/>
                                     <constraint firstAttribute="width" constant="260" id="S0m-dx-n41"/>
-                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="60" id="WSB-RL-Bs7"/>
+                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="top" secondItem="gHD-Gt-Hw3" secondAttribute="bottom" constant="40" id="WSB-RL-Bs7"/>
                                     <constraint firstItem="QkK-sj-tEx" firstAttribute="top" secondItem="i8v-mG-Xnz" secondAttribute="bottom" constant="40" id="mi6-Cj-cfa"/>
-                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="30" id="n3K-Rh-Z7x" userLabel="Button List.leading = leading + 30"/>
+                                    <constraint firstItem="i8v-mG-Xnz" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="10" id="n3K-Rh-Z7x" userLabel="Button List.leading = leading + 30"/>
                                     <constraint firstAttribute="height" constant="400" id="oXs-zs-jUY"/>
-                                    <constraint firstItem="QkK-sj-tEx" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="30" id="p7q-Fa-IEs"/>
-                                    <constraint firstAttribute="trailing" secondItem="mHU-1H-ZTc" secondAttribute="trailing" constant="30" id="uDI-hB-h0X"/>
+                                    <constraint firstItem="QkK-sj-tEx" firstAttribute="leading" secondItem="9jB-ax-ZJn" secondAttribute="leading" constant="10" id="p7q-Fa-IEs"/>
+                                    <constraint firstAttribute="trailing" secondItem="mHU-1H-ZTc" secondAttribute="trailing" constant="10" id="uDI-hB-h0X"/>
                                     <constraint firstItem="0Lh-J9-Xie" firstAttribute="top" secondItem="mHU-1H-ZTc" secondAttribute="bottom" constant="40" id="zMr-cd-5gd"/>
                                 </constraints>
                             </view>
@@ -145,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="-21"/>
+            <point key="canvasLocation" x="4" y="-21.139430284857571"/>
         </scene>
         <!--Detail Setting Pop Up View Controller-->
         <scene sceneID="67M-AO-h01">
@@ -287,6 +292,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Maldives.jpg" width="1440" height="900"/>
+        <image name="block.png" width="512" height="512"/>
+        <image name="donut.png" width="512" height="512"/>
+        <image name="list.png" width="512" height="512"/>
+        <image name="pie.png" width="512" height="512"/>
     </resources>
 </document>
