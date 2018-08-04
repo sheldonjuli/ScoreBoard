@@ -8,11 +8,11 @@
 
 import Foundation
 
-enum BoardStyle : Int {
-    case List = 0
-    case Pie = 1
-    case Block = 2
-    case Donut = 3
+enum BoardStyle {
+    case List
+    case Pie
+    case Block
+    case Donut
 }
 
 struct Player {
