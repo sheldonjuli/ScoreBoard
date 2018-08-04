@@ -10,10 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var buttonList: UIButton!
-    @IBOutlet weak var buttonPie: UIButton!
-    @IBOutlet weak var buttonDonut: UIButton!
-    @IBOutlet weak var buttonBlock: UIButton!
+    @IBOutlet private weak var buttonList: UIButton!
+    @IBOutlet private weak var buttonPie: UIButton!
+    @IBOutlet private weak var buttonDonut: UIButton!
+    @IBOutlet private weak var buttonBlock: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

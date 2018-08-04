@@ -10,16 +10,16 @@ import UIKit
 
 class DetailSettingPopUpViewController: UIViewController {
     
-    @IBOutlet weak var popUpView: UIView!
-    @IBOutlet weak var boardStylePreview: UIImageView!
-    @IBOutlet weak var playerNumDownButton: UIButton!
-    @IBOutlet weak var playerNumLabel: UILabel!
-    @IBOutlet weak var playerNumUpButton: UIButton!
-    @IBOutlet weak var scoreValue: UITextField!
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet private weak var popUpView: UIView!
+    @IBOutlet private weak var boardStylePreview: UIImageView!
+    @IBOutlet private weak var playerNumDownButton: UIButton!
+    @IBOutlet private weak var playerNumLabel: UILabel!
+    @IBOutlet private weak var playerNumUpButton: UIButton!
+    @IBOutlet private weak var scoreValue: UITextField!
+    @IBOutlet private weak var nextButton: UIButton!
     
     var boardStyle: BoardStyle? = nil
-    var playerNum: Int = 1
+    private(set) var playerNum: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +85,7 @@ class DetailSettingPopUpViewController: UIViewController {
         }
     }
     
-    func showPopUp() {
+    private func showPopUp() {
         self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
         self.view.alpha = 0.0
         UIView.animate(withDuration: 0.25, animations: {
@@ -94,7 +94,7 @@ class DetailSettingPopUpViewController: UIViewController {
         });
     }
     
-    func removePopUp() {
+    private func removePopUp() {
         UIView.animate(withDuration: 0.25, animations: {
             self.view.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             self.view.alpha = 0.0;
@@ -105,7 +105,7 @@ class DetailSettingPopUpViewController: UIViewController {
         });
     }
     
-    func showBoardStylePreview() {
+    private func showBoardStylePreview() {
         if let boardStyle = self.boardStyle {
             switch boardStyle {
             case .List:

@@ -22,7 +22,7 @@ struct Player {
     
     static var currId = 0
     
-    static func getUniqueId() -> Int {
+    private static func getUniqueId() -> Int {
         currId += 1
         return currId
     }
