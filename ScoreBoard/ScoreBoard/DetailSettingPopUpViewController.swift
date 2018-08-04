@@ -23,14 +23,12 @@ class DetailSettingPopUpViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.showPopUp()
-        
-        // TODO dynamically draw the preview
-        self.showBoardStylePreview()
 
+        // TODO: dynamically draw the preview
+        showBoardStylePreview()
         playerNumLabel.text = playerNum.description
-        
         scoreValue.keyboardType = UIKeyboardType.numberPad
+        showPopUp()
     }
     
     override func didReceiveMemoryWarning() {
@@ -42,7 +40,7 @@ class DetailSettingPopUpViewController: UIViewController {
         // Clear player list
         Player.currId = 0
         
-        self.removePopUp()
+        removePopUp()
     }
     
     @IBAction func editPlayerNum(_ sender: UIButton) {
@@ -64,23 +62,19 @@ class DetailSettingPopUpViewController: UIViewController {
     }
     
     @IBAction func clickNextButton(_ sender: UIButton) {
+
+        assert(boardStyle != nil, "Error: Board can not be initialized with boardStyle nil.")
+
         let board = Board(playerNum: playerNum, boardStyle: boardStyle!)
 
-//        print(board.boardStyle)
-//        print(board.players.count)
-//
-//        for player in board.players {
-//            print(player.name)
-//        }
-
         switch board.boardStyle {
-        case BoardStyle.List:
+        case .List:
             performSegue(withIdentifier: "openListVC", sender: sender)
-        case BoardStyle.Pie:
+        case .Pie:
             performSegue(withIdentifier: "openPieVC", sender: sender)
-        case BoardStyle.Block:
+        case .Block:
             performSegue(withIdentifier: "openBlockVC", sender: sender)
-        case BoardStyle.Donut:
+        case .Donut:
             performSegue(withIdentifier: "openDonutVC", sender: sender)
         }
     }
@@ -106,18 +100,20 @@ class DetailSettingPopUpViewController: UIViewController {
     }
     
     private func showBoardStylePreview() {
-        if let boardStyle = self.boardStyle {
-            switch boardStyle {
-            case .List:
-                boardStylePreview.image = UIImage(named: "list.png")
-            case .Pie:
-                boardStylePreview.image = UIImage(named: "pie.png")
-            case .Block:
-                boardStylePreview.image = UIImage(named: "block.png")
-            case .Donut:
-                boardStylePreview.image = UIImage(named: "donut.png")
-            }
+        
+        assert(boardStyle != nil, "Error: Board preview can not be shown with boardStyle nil.")
+
+        switch boardStyle! {
+        case .List:
+            boardStylePreview.image = UIImage(named: "list.png")
+        case .Pie:
+            boardStylePreview.image = UIImage(named: "pie.png")
+        case .Block:
+            boardStylePreview.image = UIImage(named: "block.png")
+        case .Donut:
+            boardStylePreview.image = UIImage(named: "donut.png")
         }
+
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
