@@ -20,7 +20,11 @@ struct Player {
     var name : String
     var score : Int
     
-    static var currId = 0
+    private static var currId = 0
+    
+    static func restartPlayerCount() {
+        currId = 0
+    }
     
     private static func getUniqueId() -> Int {
         currId += 1

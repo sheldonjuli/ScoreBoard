@@ -38,8 +38,7 @@ class DetailSettingPopUpViewController: UIViewController {
     
     @IBAction func closeDetailSettingPopUp(_ sender: UIButton) {
         // Clear player list
-        Player.currId = 0
-        
+        Player.restartPlayerCount()
         removePopUp()
     }
     
@@ -66,7 +65,7 @@ class DetailSettingPopUpViewController: UIViewController {
         assert(boardStyle != nil, "Error: Board can not be initialized with boardStyle nil.")
 
         let board = Board(playerNum: playerNum, boardStyle: boardStyle!)
-
+        
         switch board.boardStyle {
         case .List:
             performSegue(withIdentifier: "openListVC", sender: sender)
