@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ayg-MQ-jLy">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9jB-ax-ZJn">
-                                <rect key="frame" x="57.666666666666657" y="196" width="260" height="420"/>
+                                <rect key="frame" x="77" y="158" width="260" height="420"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8v-mG-Xnz">
-                                        <rect key="frame" x="10.000000000000007" y="110" width="100" height="100"/>
+                                        <rect key="frame" x="10" y="110" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="DWl-MG-6GB"/>
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QkK-sj-tEx">
-                                        <rect key="frame" x="10.000000000000007" y="250" width="100" height="100"/>
+                                        <rect key="frame" x="10" y="250" width="100" height="100"/>
                                         <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="HiY-iR-1WH"/>
@@ -150,6 +150,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="f3I-cI-HUh"/>
                     <connections>
                         <outlet property="buttonBlock" destination="QkK-sj-tEx" id="HBu-fI-ZLw"/>
                         <outlet property="buttonDonut" destination="0Lh-J9-Xie" id="aJt-n5-Y5L"/>
@@ -159,21 +160,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="-21.139430284857571"/>
+            <point key="canvasLocation" x="946.39999999999998" y="-21.428571428571431"/>
         </scene>
         <!--Detail Setting Pop Up View Controller-->
         <scene sceneID="67M-AO-h01">
             <objects>
                 <viewController storyboardIdentifier="DetailSettingPopUpID" id="9xX-8e-2SH" customClass="DetailSettingPopUpViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WXN-gt-jxR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KZf-kK-YwC">
-                                <rect key="frame" x="57.666666666666657" y="196" width="260" height="420"/>
+                                <rect key="frame" x="77" y="158" width="260" height="420"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="bfB-Z2-FYr">
-                                        <rect key="frame" x="80.666666666666686" y="120" width="100" height="30"/>
+                                        <rect key="frame" x="80.666666666666657" y="120" width="100" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpP-cf-Mb3">
                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
@@ -295,14 +296,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HBJ-iG-Psw" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="kyc-RM-nPt" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="892" y="-21.139430284857571"/>
+            <point key="canvasLocation" x="1834.4000000000001" y="-21.428571428571431"/>
         </scene>
         <!--List View Controller-->
         <scene sceneID="C89-rk-UTW">
             <objects>
                 <viewController id="0Us-gX-BzE" customClass="ListViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6kU-jG-RvR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="List VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ady-ri-lGH">
@@ -319,25 +320,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="je3-k3-DgS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1849" y="-21"/>
+            <point key="canvasLocation" x="2791.1999999999998" y="-21.428571428571431"/>
         </scene>
         <!--Pie View Controller-->
         <scene sceneID="mLn-bA-WwO">
             <objects>
                 <viewController id="LBe-5m-73j" customClass="PieViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="L0f-qU-m6k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pie VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLN-Hm-wh2">
-                                <rect key="frame" x="166" y="101" width="51" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2X-t1-fME">
+                                <rect key="frame" x="20" y="40" width="374" height="676"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.2579738526" blue="0.43555547610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="DfU-yf-68b" firstAttribute="bottom" secondItem="R2X-t1-fME" secondAttribute="bottom" constant="20" id="7J9-Cf-WWl"/>
+                            <constraint firstItem="R2X-t1-fME" firstAttribute="top" secondItem="DfU-yf-68b" secondAttribute="top" constant="20" id="Tul-Rm-wAi"/>
+                            <constraint firstItem="R2X-t1-fME" firstAttribute="leading" secondItem="DfU-yf-68b" secondAttribute="leading" constant="20" id="cws-J4-BIQ"/>
+                            <constraint firstItem="DfU-yf-68b" firstAttribute="trailing" secondItem="R2X-t1-fME" secondAttribute="trailing" constant="20" id="fSC-jw-hoX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DfU-yf-68b"/>
                     </view>
                 </viewController>
@@ -350,7 +354,7 @@
             <objects>
                 <viewController id="IXe-YI-2yW" customClass="BlockViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vhn-Oz-NAR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Block VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRj-Vh-hG2">
@@ -374,7 +378,7 @@
             <objects>
                 <viewController id="VBc-cN-nAK" customClass="DonutViewController" customModule="ScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xgN-Qo-VO9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Donut VC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d08-uu-Vqx">
@@ -392,6 +396,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BSW-XO-tlm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1849" y="2219"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="I1c-dj-mNn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ayg-MQ-jLy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="cpp-38-k6S">
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pAC-lq-C0W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2H-Kq-ScS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="-21.428571428571431"/>
         </scene>
     </scenes>
     <resources>
