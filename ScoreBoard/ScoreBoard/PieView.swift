@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class PieView: UIView {
     override func draw(_ rect: CGRect) {
 
