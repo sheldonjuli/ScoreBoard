@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241163BC211B7F7C00B9056C /* PieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241163BB211B7F7C00B9056C /* PieView.swift */; };
+		241163BE211B944700B9056C /* DrawUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241163BD211B944700B9056C /* DrawUtils.swift */; };
 		241786AF21134BED00B57190 /* ObjectModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241786AE21134BED00B57190 /* ObjectModels.swift */; };
 		241786B62113C66D00B57190 /* Maldives.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 241786B52113C66D00B57190 /* Maldives.jpg */; };
 		241786BC2113E33800B57190 /* donut.png in Resources */ = {isa = PBXBuildFile; fileRef = 241786BB2113E33800B57190 /* donut.png */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		241163BB211B7F7C00B9056C /* PieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieView.swift; sourceTree = "<group>"; };
+		241163BD211B944700B9056C /* DrawUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawUtils.swift; sourceTree = "<group>"; };
 		241786AE21134BED00B57190 /* ObjectModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectModels.swift; sourceTree = "<group>"; };
 		241786B52113C66D00B57190 /* Maldives.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Maldives.jpg; sourceTree = "<group>"; };
 		241786BB2113E33800B57190 /* donut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = donut.png; sourceTree = "<group>"; };
@@ -137,9 +141,11 @@
 				24361164210FC8E100F3C1CF /* DetailSettingPopUpViewController.swift */,
 				241786C52114F87000B57190 /* ListViewController.swift */,
 				241786C72114FA5100B57190 /* PieViewController.swift */,
+				241163BB211B7F7C00B9056C /* PieView.swift */,
 				241786C92114FA5F00B57190 /* BlockViewController.swift */,
 				241786CB2114FA7300B57190 /* DonutViewController.swift */,
 				241786AE21134BED00B57190 /* ObjectModels.swift */,
+				241163BD211B944700B9056C /* DrawUtils.swift */,
 				24361138210FB96300F3C1CF /* Main.storyboard */,
 				2436113B210FB96300F3C1CF /* Assets.xcassets */,
 				2436113D210FB96300F3C1CF /* LaunchScreen.storyboard */,
@@ -309,6 +315,8 @@
 				241786C82114FA5100B57190 /* PieViewController.swift in Sources */,
 				241786CC2114FA7300B57190 /* DonutViewController.swift in Sources */,
 				241786C62114F87000B57190 /* ListViewController.swift in Sources */,
+				241163BE211B944700B9056C /* DrawUtils.swift in Sources */,
+				241163BC211B7F7C00B9056C /* PieView.swift in Sources */,
 				24361135210FB96300F3C1CF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
